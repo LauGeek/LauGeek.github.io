@@ -1,0 +1,10 @@
+nav a i {
+    font-size: 24px; /* Adjust size */
+    color: #333;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+nav a i:hover {
+    color: #007bff; /* Change color on hover */
+}
