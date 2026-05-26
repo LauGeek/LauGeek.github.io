@@ -31,9 +31,9 @@ footer {
 /* --- 3. Centered Content --- */
 /* Apply this class to any element you want centered/constrained */
 .content-width {
-    max-width: 800px;
-    margin: 0 auto;
-    width: 100%;
+    max-width: 1000px; /* Modern standard for readability */
+    margin: 0 auto;    /* Centers the content */
+    width: 90%;        /* Allows for mobile-friendly margins */
 }
 
 main {
