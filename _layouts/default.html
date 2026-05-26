@@ -12,19 +12,16 @@
     <!-- TOP HEADER -->
     <header>
         <h1>Lau Geek</h1>
-        {% include nav.html %}
+        {% include header.html %}
     </header>
 
-    <!-- MAIN CONTENT AREA -->
-    <div class="main-wrapper">
-        <aside class="sidebar">
-            {% include sidebar.html %}
-        </aside>
+<main class="content">
+        {{ content }}
+    </main>
 
-        <main class="content">
-            {{ content }}
-        </main>
-    </div>
+    <footer>
+        {% include footer.html %}
+    </footer>
 
 </body>
 </html>
