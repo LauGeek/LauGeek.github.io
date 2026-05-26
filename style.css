@@ -71,3 +71,34 @@ p { margin-bottom: 1.5rem; }
 
 ul { margin-bottom: 1.5rem; padding-left: 20px; }
 li { margin-bottom: 0.5rem; }
+
+.module-list {
+    list-style: none; /* Removes bullet points */
+    padding: 0;
+}
+
+.module-list li {
+    margin-bottom: 12px;
+}
+
+.module-list a {
+    display: block;
+    text-decoration: none;
+    color: #374151; /* Dark gray */
+    padding: 16px;
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px; /* Modern rounded corners */
+    transition: all 0.2s ease;
+}
+
+.module-list a:hover {
+    background-color: #eff6ff; /* Soft blue background on hover */
+    border-color: #bfdbfe;
+    color: #1e40af;
+}
+
+.module-list a strong {
+    color: #111827; /* Keeps the title bold and dark */
+    margin-right: 8px;
+}
