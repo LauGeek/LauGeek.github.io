@@ -5,7 +5,7 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #fff;
     color: #333;
 }
 
@@ -14,15 +14,14 @@ header, footer {
     width: 100%;
     padding: 20px;
     box-sizing: border-box; /* Crucial: ensures padding doesn't widen the page */
+    background-color: #e8e8ef;
 }
 
 header {
-    background-color: #fff;
     border-bottom: 1px solid #ccc;
 }
 
 footer {
-    background-color: #e8e8ef;
     border-top: 1px solid #ccc;
     font-size: 0.9em;
     text-align: center;
