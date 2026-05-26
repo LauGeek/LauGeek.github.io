@@ -103,6 +103,16 @@ li { margin-bottom: 0.5rem; }
     margin-right: 8px;
 }
 
+/* Form Style */
+.contact-form {
+    padding: 24px;
+    background-color: #ffffff; /* White background */
+    border: 1px solid #e5e7eb; /* Subtle border */
+    border-radius: 12px;       /* Modern soft corners */
+    max-width: 600px;          /* Optional: keeps form from getting too wide */
+    margin: 0 auto;            /* Centers the form on the page */
+}
+
 .form-group {
     margin-bottom: 1.5rem;
 }
@@ -115,11 +125,11 @@ label {
 
 input, textarea {
     width: 100%;
-    padding: 12px;
+    padding: 12px; /* Internal padding for the input box */
     border: 1px solid #d1d5db;
     border-radius: 6px;
     font-family: inherit;
-    box-sizing: border-box; /* Ensures padding doesn't break layout */
+    box-sizing: border-box; 
 }
 
 button {
