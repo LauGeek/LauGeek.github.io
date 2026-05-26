@@ -68,3 +68,35 @@ nav a i {
     margin-right: 8px;      /* Space between icon and text */
     transition: color 0.3s;
 }
+
+/* Content Styling */
+main h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+main h2 {
+    font-size: 1.8em;
+    margin-top: 40px;
+    color: #222;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+main h3 {
+    font-size: 1.4em;
+    margin-top: 30px;
+    color: #444;
+}
+
+main p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+main ul {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
