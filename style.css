@@ -1,4 +1,4 @@
-/* --- 1. Global & Reset --- */
+/* --- 1. Global --- */
 body {
     display: flex;
     flex-direction: column;
@@ -9,37 +9,40 @@ body {
     color: #333;
 }
 
-/* --- 2. Shared Layout Containers --- */
-/* Groups header, main, and footer content to the same width/alignment */
-.header-container, main, footer {
+/* --- 2. Full-Width Strips --- */
+header, footer {
     width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
     padding: 20px;
-    box-sizing: border-box; /* Ensures padding doesn't increase width */
+    box-sizing: border-box; /* Crucial: ensures padding doesn't widen the page */
 }
 
-/* --- 3. Header & Footer Styling --- */
 header {
     background-color: #fff;
     border-bottom: 1px solid #ccc;
 }
 
 footer {
-    border-top: 1px solid #ccc;
     background-color: #e8e8ef;
+    border-top: 1px solid #ccc;
     font-size: 0.9em;
     text-align: center;
 }
 
-/* --- 4. Main Content --- */
-main {
-    flex: 1;
+/* --- 3. Centered Content --- */
+/* Apply this class to any element you want centered/constrained */
+.content-width {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
 }
 
-/* --- 5. Navigation & Typography --- */
-h1 { color: #222; margin: 0; }
+main {
+    flex: 1;
+    padding: 20px;
+}
 
+/* --- 4. Navigation & Typography --- */
+h1 { color: #222; margin: 0; }
 nav { margin-top: 10px; }
 
 nav a {
@@ -51,9 +54,3 @@ nav a {
 }
 
 nav a:hover { color: #007bff; }
-
-nav a i {
-    font-size: 24px;
-    vertical-align: middle;
-    transition: color 0.3s;
-}
