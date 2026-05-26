@@ -43,7 +43,10 @@ main {
 
 /* --- 4. Navigation & Typography --- */
 h1 { color: #222; margin: 0; }
-nav { margin-top: 10px; }
+
+nav { 
+    margin-top: 10px; 
+}
 
 nav a {
     text-decoration: none;
@@ -51,6 +54,17 @@ nav a {
     font-weight: bold;
     margin-right: 15px;
     transition: color 0.3s;
+    /* Optional: This aligns the text and icon vertically */
+    display: inline-flex;
+    align-items: center; 
 }
 
-nav a:hover { color: #007bff; }
+nav a:hover { 
+    color: #007bff; 
+}
+
+nav a i {
+    font-size: 32px;        /* Increased size */
+    margin-right: 8px;      /* Space between icon and text */
+    transition: color 0.3s;
+}
