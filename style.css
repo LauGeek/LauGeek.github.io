@@ -9,55 +9,44 @@ body {
     color: #333;
 }
 
-/* --- 2. Header & Footer --- */
-header, footer {
+/* --- 2. Shared Layout Containers --- */
+/* Groups header, main, and footer content to the same width/alignment */
+.header-container, main, footer {
     width: 100%;
-    text-align: center;
-    padding: 20px 0;
-}
-
-header {
-    border-bottom: 1px solid #ccc;
-    background-color: #fff;
-}
-
-.header-container {
-    display: block;            /* Stack elements vertically */
-    text-align: left;          /* Force everything to the left */
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;             /* Keeps it away from the screen edge */
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding doesn't increase width */
+}
+
+/* --- 3. Header & Footer Styling --- */
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
 }
 
 footer {
     border-top: 1px solid #ccc;
     background-color: #e8e8ef;
     font-size: 0.9em;
+    text-align: center;
 }
 
-/* --- 3. Main Content Area --- */
+/* --- 4. Main Content --- */
 main {
-    flex: 1; /* Pushes the footer down */
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    flex: 1;
 }
 
-/* --- 4. Navigation & Typography --- */
-h1 { color: #222; margin: 10px 0; }
+/* --- 5. Navigation & Typography --- */
+h1 { color: #222; margin: 0; }
 
-nav {
-    margin-top: 10px;          /* Adds space between title and links */
-    text-align: left;
-}
+nav { margin-top: 10px; }
 
 nav a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    margin-right: 15px; /* Spacing only on the right */
-    margin-left: 0;     /* Force links to the left */
+    margin-right: 15px;
     transition: color 0.3s;
 }
 
@@ -65,6 +54,6 @@ nav a:hover { color: #007bff; }
 
 nav a i {
     font-size: 24px;
-    vertical-align: middle; /* Keeps icons aligned with text */
+    vertical-align: middle;
     transition: color 0.3s;
 }
