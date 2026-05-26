@@ -21,6 +21,13 @@ header {
     background-color: #fff;
 }
 
+.header-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: left;
+}
+
 footer {
     border-top: 1px solid #ccc;
     background-color: #e8e8ef;
