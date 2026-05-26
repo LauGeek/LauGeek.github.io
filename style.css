@@ -22,10 +22,11 @@ header {
 }
 
 .header-container {
+    display: block;            /* Stack elements vertically */
+    text-align: left;          /* Force everything to the left */
     max-width: 800px;
     margin: 0 auto;
-    padding: 0 20px;
-    text-align: left;
+    padding: 20px;             /* Keeps it away from the screen edge */
 }
 
 footer {
@@ -46,13 +47,15 @@ main {
 /* --- 4. Navigation & Typography --- */
 h1 { color: #222; margin: 10px 0; }
 
-nav { margin: 15px 0; }
+nav {
+    margin-top: 10px;          /* Adds space between title and links */
+    text-align: left;
+}
 
 nav a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    margin: 0 10px;
     margin-right: 15px; /* Spacing only on the right */
     margin-left: 0;     /* Force links to the left */
     transition: color 0.3s;
