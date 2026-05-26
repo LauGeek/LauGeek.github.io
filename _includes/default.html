@@ -1,0 +1,21 @@
+<!-- _layouts/default.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lau Geek</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <h1>Lau Geek</h1>
+    
+    <!-- This includes the menu you created in _includes/nav.html -->
+    {% include nav.html %}
+
+    <!-- This is where the unique content of each page will go -->
+    {{ content }}
+
+</body>
+</html>
