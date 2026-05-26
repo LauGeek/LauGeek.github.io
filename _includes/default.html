@@ -9,13 +9,27 @@
 </head>
 <body>
 
-    <h1>Lau Geek</h1>
-    
-    <!-- This includes the menu you created in _includes/nav.html -->
-    {% include nav.html %}
+    <!-- TOP HEADER -->
+    <header>
+        <h1>Lau Geek</h1>
+        {% include nav.html %}
+    </header>
 
-    <!-- This is where the unique content of each page will go -->
-    {{ content }}
+    <!-- MAIN CONTENT AREA -->
+    <div class="main-wrapper">
+        <aside class="sidebar">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="/">Dashboard</a></li>
+                <li><a href="/projects/">Projects</a></li>
+                <li><a href="/certifications/">Certifications</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            {{ content }}
+        </main>
+    </div>
 
 </body>
 </html>
