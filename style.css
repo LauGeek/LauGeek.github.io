@@ -1,3 +1,37 @@
+/* Layout Structure */
+.main-wrapper {
+    display: flex; /* This puts the sidebar and content side-by-side */
+    margin-top: 20px;
+}
+
+.sidebar {
+    width: 200px; /* Fixed width for the left menu */
+    padding: 20px;
+    background-color: #eee;
+    min-height: 80vh; /* Ensures it stretches down */
+}
+
+.content {
+    flex: 1; /* This makes the content take up all remaining space */
+    padding: 20px;
+}
+
+/* Cleanup */
+header {
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
 /* General Page Styling */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
