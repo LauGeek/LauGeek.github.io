@@ -38,6 +38,23 @@ main {
     padding: 48px 0; /* More breathing room */
 }
 
+/* The base container for pages WITH a sidebar */
+.layout-sidebar {
+    display: grid;
+    grid-template-columns: 1fr 300px; /* Main content takes most space, Sidebar is 300px */
+    gap: 48px;
+    max-width: 1200px; /* Wider limit for sidebar pages */
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Responsive adjustment for mobile: stack them */
+@media (max-width: 900px) {
+    .layout-sidebar {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* --- 4. Navigation --- */
 header .content-width {
     display: flex;
