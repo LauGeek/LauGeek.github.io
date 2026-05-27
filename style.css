@@ -33,6 +33,18 @@ footer {
     padding: 0 24px;
 }
 
+.header-grid {
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* Left, Middle, Right */
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* This forces your links to the center */
+    gap: 24px;
+}
+
 main {
     flex: 1;
     padding: 48px 0; /* More breathing room */
