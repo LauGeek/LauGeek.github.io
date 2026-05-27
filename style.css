@@ -17,6 +17,26 @@ header {
     padding: 24px 0;
 }
 
+.header-flex {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* This makes all three sections exactly equal width */
+.header-left, .header-middle, .header-right {
+    flex: 1;
+}
+
+/* Forces contents to align as requested */
+.header-left { display: flex; justify-content: flex-start; }
+.header-middle { display: flex; justify-content: center; }
+.header-right { display: flex; justify-content: flex-end; }
+
+/* Clean up the H1 inside the link */
+.header-left h1 { font-size: 1.5rem; }
 footer {
     background-color: #f9fafb; /* Lighter background for footer */
     border-top: 1px solid #e5e7eb;
@@ -56,20 +76,7 @@ main {
 }
 
 /* --- 4. Navigation --- */
-.header-grid {
-    display: grid;
-    grid-template-columns: auto 1fr auto; /* Left, Middle, Right */
-    align-items: center;
-    max-width: 1200px; /* Adjust this to your preferred header width */
-    margin: 0 auto;
-    padding: 0 24px;
-}
 
-nav {
-    display: flex;
-    justify-content: center; /* This forces your links to the center */
-    gap: 24px;
-}
 
 nav a {
     text-decoration: none;
