@@ -33,12 +33,6 @@ footer {
     padding: 0 24px;
 }
 
-.header-grid {
-    display: grid;
-    grid-template-columns: auto 1fr auto; /* Left, Middle, Right */
-    align-items: center;
-}
-
 nav {
     display: flex;
     justify-content: center; /* This forces your links to the center */
@@ -68,10 +62,10 @@ main {
 }
 
 /* --- 4. Navigation --- */
-header .content-width {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header .header-grid {
+    max-width: 1200px; /* Or whatever width you want for your header */
+    margin: 0 auto;
+    padding: 0 24px;
 }
 
 nav a {
